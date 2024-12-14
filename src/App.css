@@ -1,0 +1,15 @@
+.container-body {
+  width: 100%; /* Matches the sidebar width */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.body {
+  margin-top: 10px;
+  flex-grow: 1;
+  overflow-y: auto; /* Allow only the body to scroll */
+  margin: auto;
+}

@@ -1,51 +1,48 @@
 import styles from "./sidebar.module.css";
-
+import { Link } from "react-router-dom";
 const Sidebar = () => {
   return (
     <div
       className={`${styles.sidecontain} d-flex flex-column flex-shrink-0 p-3 text-bg-dark`}
     >
-      <a
-        href="/"
+      <Link
+        to="/"
         className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
       >
         <svg className="bi pe-none me-2" width="40" height="32">
           <use xlinkHref="#bootstrap" />
         </svg>
         <span className="fs-4 fw-bold">Friends Blogs</span>
-      </a>
+      </Link>
       <hr />
 
       <ul className={`nav nav-pills flex-column mb-auto ${styles.sideList}`}>
         <li>
-          <a href="#" className={`btn btn-info fw-bold ${styles.text} `}>
+          <Link to="/" className={`btn btn-info fw-bold ${styles.text} `}>
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#" className={`btn btn-info fw-bold ${styles.text}`}>
+          <Link to="#" className={`btn btn-info fw-bold ${styles.text}`}>
             My Blogs
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#" className={`btn btn-info fw-bold ${styles.text}`}>
+          <Link to="/add" className={`btn btn-info fw-bold ${styles.text}`}>
             Create New
-          </a>
+          </Link>
         </li>
       </ul>
       <ul className={`nav nav-pills flex-column ${styles.sideList}`}>
         <li>
-          <a href="#" className={`btn btn-danger fw-bold ${styles.text}`}>
+          <Link to="#" className={`btn btn-danger fw-bold ${styles.text}`}>
             Log Out
-          </a>
+          </Link>
         </li>
       </ul>
       <hr />
       <div className={styles.dropdown}>
-        <a
-          className="text-decoration-none"
-          href="#"
-        >
+        <Link className="text-decoration-none" to="#">
           <img
             src="https://github.com/mdo.png"
             alt=""
@@ -54,7 +51,7 @@ const Sidebar = () => {
             className="rounded-circle me-2 mx-2 my-2"
           />
           <strong className="text-white fs-5">Profile</strong>
-        </a>
+        </Link>
       </div>
     </div>
   );
