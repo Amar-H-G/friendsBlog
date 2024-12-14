@@ -2,6 +2,7 @@ import style from "./myBlog.module.css";
 import data from "../../store/myData/data.json";
 import { AiOutlineLike, AiOutlineDislike } from "react-icons/ai";
 import { LiaCommentsSolid } from "react-icons/lia";
+import { Link } from "react-router-dom";
 const MyBlogs = () => {
   return (
     <>
@@ -28,9 +29,9 @@ const MyBlogs = () => {
               </div>
               <p className="card-text">{datas.content}</p>
               <div className={style.button}>
-                <a href="#" className="btn btn-primary">
+                <Link to="/update" className="btn btn-primary">
                   Edit
-                </a>
+                </Link>
                 <a href="#" className="btn btn-warning">
                   Remove
                 </a>
