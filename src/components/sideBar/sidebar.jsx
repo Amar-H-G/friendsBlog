@@ -23,7 +23,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link to="#" className={`btn btn-info fw-bold ${styles.text}`}>
+          <Link to="/myBlogs" className={`btn btn-info fw-bold ${styles.text}`}>
             My Blogs
           </Link>
         </li>

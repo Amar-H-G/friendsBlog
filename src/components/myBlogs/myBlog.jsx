@@ -1,9 +1,8 @@
-import style from "./home.module.css";
-import data from "../../store/data/data.json";
+import style from "./myBlog.module.css";
+import data from "../../store/myData/data.json";
 import { AiOutlineLike, AiOutlineDislike } from "react-icons/ai";
 import { LiaCommentsSolid } from "react-icons/lia";
-import { Link } from "react-router-dom";
-const Home = () => {
+const MyBlogs = () => {
   return (
     <>
       <div className={style.cards}>
@@ -29,9 +28,9 @@ const Home = () => {
               </div>
               <p className="card-text">{datas.content}</p>
               <div className={style.button}>
-                <Link to="/update" className="btn btn-primary">
+                <a href="#" className="btn btn-primary">
                   Edit
-                </Link>
+                </a>
                 <a href="#" className="btn btn-warning">
                   Remove
                 </a>
@@ -44,4 +43,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default MyBlogs;
